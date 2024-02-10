@@ -16,7 +16,11 @@ The request object for both endpoints will be like this:
   ]
 }
 ```
-
+Where the parameters are:
+- matrix: Set of strings which represents a character matrix. The matrix size does not exceed 64x64, all strings contain the same number of characters.
+- wordstream: Set of strings with words to be found in the matrix.
+  
+  
 In the first one, findAll, you will find a response object with all the words you were finding in the matrix, and a counter with the number of coincidences for each word, even if there is 0 coincidences. This endpoint was added as a tool to validate the algorithm, to see how many times each word is found. The response object will be like this:
 ```
 [
